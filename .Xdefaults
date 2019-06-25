@@ -14,8 +14,8 @@ URxvt.depth:           15
 !! URxvt.inheritPixmap: true
 
 !! Fonts
-URxvt.font:        xft:DroidSansMono Nerd Font:pixelsize=13:antialias=true,xft:monospace
-URxvt.boldFont:    xft:DroidSansMono Nerd Font:pixelsize=13:weight=bold:antialias=true,xft:monospace
+URxvt.font:        xft:Hack Nerd Font Mono:pixelsize=13:antialias=true,xft:monospace
+URxvt.boldFont:    xft:Hack Nerd Font Mono:pixelsize=13:weight=bold:antialias=true,xft:monospace
 URxvt.letterSpace: -1
 
 !! Larger history limit
