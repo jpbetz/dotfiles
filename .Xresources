@@ -41,11 +41,11 @@ Xft.hinting:	1
 *.n15: #B48EAD
 
 
-*.foreground:   nord4
+*.foreground:   nord7
 *.background:   nord0
-*.cursorColor:  nord4
+*.cursorColor:  nord7
 *fading: 35
-*fadeColor: nord3
+*fadeColor: nord8
 
 *.color0: nord1
 *.color1: nord11
@@ -63,5 +63,3 @@ Xft.hinting:	1
 *.color13: nord15
 *.color14: nord7
 *.color15: nord6
-
-Rxvt*background: nord0

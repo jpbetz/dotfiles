@@ -16,36 +16,25 @@ exec_always --no-startup-id feh --bg-fill $HOME/projects/desktop-ui/backgrounds/
 
 set $mod Mod4
 
-# Manually set colors
-# define colors used
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #5294e2
-
-client.focused          #676E7D #676E7D #FFFFFF #676E7D
-client.focused_inactive #2f343f #2f343f #FFFFFF #2f343f
-client.unfocused        #2f343f #2f343f #FFFFFF #2f343f
-client.urgent           #2f343f #2f343f #ffffff #2f343f
-client.placeholder      #2f343f #2f343f #ffffff #2f343f
-
 # Set colors from Xresources
 # Change 'color7' and 'color2' to whatever colors you want i3 to use 
 # from the generated scheme.
 # NOTE: The '#f0f0f0' in the lines below is the color i3 will use if
 # it fails to get colors from Xresources.
-#set_from_resource $fg i3wm.color7 #f0f0f0
-#set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $fg color7 #f0f0f0
+set_from_resource $bg color0 #f0f0f0
+set_from_resource $focused_bg color8 #f0f0f0
+set_from_resource $focused_fg color7 #f0f0f0
+set_from_resource $focused_accent color14 #f0f0f0
 
 # class                 border  backgr. text indicator child_border
-#client.focused          $fg     $fg     $fg  $fg       $fg
-#client.focused_inactive $bg     $bg     $fg  $bg       $bg
-#client.unfocused        $bg     $bg     $fg  $bg       $bg
-#client.urgent           $bg     $bg     $fg  $bg       $bg
-#client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.focused          $focused_bg $focused_bg $focused_fg $focused_accent $focused_fg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
 
-#client.background       $bg
+client.background       $bg
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -66,7 +55,7 @@ font DroidSansMono Nerd Font:antialias=true:hinting=true:pixelsize=11 11
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec /usr/bin/urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -197,7 +186,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 ### i3-gaps stuff ###
 
 # Necessary for i3-gaps to work properly (pixel can be any value)
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 2
 
 # Smart Gaps
 smart_gaps on
