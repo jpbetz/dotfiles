@@ -5,46 +5,34 @@ Xft.antialias:	1
 Xft.autohint:	1
 Xft.hinting:	1
 
-
+! Polar Night (dark-light)
 #define nord0 #2E3440
 #define nord1 #3B4252
 #define nord2 #434C5E
 #define nord3 #4C566A
+
+! Snow Storm (dark-light)
 #define nord4 #D8DEE9
 #define nord5 #E5E9F0
 #define nord6 #ECEFF4
+
+! Frost (greenish, light blue, mid blue, dark blue)
 #define nord7 #8FBCBB
 #define nord8 #88C0D0
 #define nord9 #81A1C1
 #define nord10 #5E81AC
+
+! Aurora (red, orange, yellow, green, purple)
 #define nord11 #BF616A
 #define nord12 #D08770
 #define nord13 #EBCB8B
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
 
-*.n0: #2E3440
-*.n1: #3B4252
-*.n2: #434C5E
-*.n3: #4C566A
-*.n4: #D8DEE9
-*.n5: #E5E9F0
-*.n6: #ECEFF4
-*.n7: #8FBCBB
-*.n8: #88C0D0
-*.n9: #81A1C1
-*.n10: #5E81AC
-*.n11: #BF616A
-*.n12: #D08770
-*.n13: #EBCB8B
-*.n14: #A3BE8C
-*.n15: #B48EAD
-
-
-*.foreground:   nord7
-*.background:   nord0
-*.cursorColor:  nord7
-*fading: 35
+*.foreground:   nord6
+*.background:   nord1
+*.cursorColor:  nord6
+*fading: 25
 *fadeColor: nord8
 
 *.color0: nord1
