@@ -1,0 +1,111 @@
+[colors]
+
+#Polar Night
+nord0 = #2E3440
+nord1 = #3B4252
+nord2 = #434C5E
+nord3 = #4C566A
+
+#Snow Storm
+nord4 = #D8DEE9
+nord5 = #E5E9F0
+nord6 = #ECEFF4
+
+#Frost
+nord7 = #8FBCBB
+nord8 = #88C0D0
+nord9 = #81A1C1
+nord10 = #5E81AC
+
+#Aurora
+nord11 = #BF616A
+nord12 = #D08770
+nord13 = #EBCB8B
+nord14 = #A3BE8C
+nord15 = #B48EAD
+
+[symbols]
+
+term = ""
+
+[bar/top]
+width = 100%
+height = 22
+background = ${colors.nord0}
+foreground = ${colors.nord15}
+padding = 2
+font-0 = DroidSansMono Nerd Font:size=10;2
+border-size = 0
+line-size = 2
+
+#modules
+modules-left = i3
+#modules-center = sL xwindow sR
+modules-right = clock
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
+label-foreground = ${colors.nord11}
+
+[module/cpu]
+type = internal/cpu
+interval = 1
+format-prefix = CPU: 
+format-prefix-foreground=${colors.nord10}
+label = %percentage:2%%
+
+[module/sR]
+type = custom/text
+content-foreground = ${colors.nord9}
+content = " "
+
+[module/sL]
+type = custom/text
+content-foreground = ${colors.nord9}
+content = " "
+
+[module/i3]
+type = internal/i3
+strip-wsnumbers = false
+>pin-workspaces = true
+format = <label-state> <label-mode>
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-default = 
+
+label-mode-padding = 1
+label-mode-foreground = ${colors.nord7}
+
+label-focused = %icon% %name%
+label-focused-foreground = ${colors.nord5}
+label-focused-background = ${colors.nord1}
+label-focused-underline = ${colors.nord14}
+label-focused-padding = 1
+
+label-unfocused-foreground = ${colors.nord5}
+label-unfocused = %icon% %name%
+label-unfocused-padding = 1
+
+label-visible-foreground = ${colors.nord7}
+label-visible = %icon% %name%
+label-visible-padding = 1
+
+[module/mem]
+type = internal/memory
+interval = 2
+format-prefix = "MEM: "
+format-prefix-foreground=${colors.nord10}
+label = %percentage_used%%
+label-foreground=${colors.nord5}
+
+[module/clock]
+type = internal/date
+interval = 1
+date = "%a %b %d"
+time = "%H:%M%P"
+#label = %date% %time%
+label = " %date%  %time%"
+label-foreground = ${colors.nord5}
+
