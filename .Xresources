@@ -30,10 +30,8 @@ Xft.hinting:	1
 #define nord15 #B48EAD
 
 *.foreground:   nord6
-*.background:   nord1
+*.background:   nord0
 *.cursorColor:  nord6
-*fading: 25
-*fadeColor: nord8
 
 *.color0: nord1
 *.color1: nord11
