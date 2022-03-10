@@ -32,7 +32,7 @@ Debian install
 ### i3
 
 ```sh
-sudo apt-get install i3
+sudo apt install i3
 ```
 
 ### i3-gaps
@@ -92,4 +92,11 @@ sudo apt-get install feh
 
 ### Fonts
 
+Currently prefered: Meslo Nerd Font
+
 Updated all config files to use desired font... Lame, I should thread it in.
+
+### Terminal
+
+- zsh
+- powerline10k

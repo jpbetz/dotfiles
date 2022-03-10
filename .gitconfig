@@ -1,0 +1,12 @@
+[user]
+	name = Joe Betz
+	email = jpbetz@google.com
+[core]
+	editor = emacs -nw
+	excludesfile = ~/.gitignore
+[alias]
+        ls = log --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
+	co = checkout
+	ca = commit --amend --no-edit
+	st = status
+	stat = status
