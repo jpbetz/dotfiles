@@ -100,3 +100,8 @@ Updated all config files to use desired font... Lame, I should thread it in.
 
 - zsh
 - powerline10k
+
+### References
+
+- https://github.com/BenTheElder/dotfiles
+- https://github.com/thockin/dotfiles/tree/master
